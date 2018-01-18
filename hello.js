@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-function hello(){
-  return 'Hello World';
+function hello(name) {
+  return "Hello " + name;
 }
 
 module.exports = hello;

@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-var test = require('tape');
-var hello = require('./hello.js');
+var test = require("tape");
+var hello = require("./hello.js");
 
-test('hello\'s output', function (t) {
-  t.equal(hello(), 'Hello World');
+test("hello's output", function(t) {
+  t.equal(hello("Bob"), "Hello Bob");
   t.end();
 });
