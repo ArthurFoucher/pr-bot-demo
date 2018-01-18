@@ -1,14 +1,12 @@
 {
   "name": "pr-bot-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "jshint hello.js hello.test.js",
+    "test": "npm run lint && node ./hello.test.js"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "pr-bot": "^0.2.0"
+    "jshint": "^2.9.5",
+    "tape": "^4.2.2"
   }
 }
