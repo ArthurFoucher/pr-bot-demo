@@ -8,6 +8,16 @@ module.exports = {
       globOptions: {
         ignore: ["**/node_modules/**/*"]
       }
-    })
+    }),
+    {
+      name: "Example Plugin",
+      run: () => {
+        return Promise.resolve({
+          failPR: false,
+          prettyLog: "Hello from example plugin.",
+          markdownLog: "## Hello from example plugin."
+        });
+      }
+    }
   ]
 };
