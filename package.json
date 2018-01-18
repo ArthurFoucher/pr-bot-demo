@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "jshint hello.js hello.test.js",
-    "test": "npm run lint && node ./hello.test.js"
+    "test": "npm run lint && node ./hello.test.js",
+    "build": "exit 0"
   },
   "devDependencies": {
     "jshint": "^2.9.5",
