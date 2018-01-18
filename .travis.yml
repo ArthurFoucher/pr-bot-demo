@@ -1,3 +1,7 @@
+language: node_js
+node_js:
+  - "node"
+
 after_script:
   - npm install -g pr-bot
   - pr-bot
