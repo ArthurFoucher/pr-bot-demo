@@ -1,7 +1,14 @@
-'use strict';
+"use strict";
 
-function hello(){
-  return 'Hello World';
+function hello() {
+  return "Hello World";
 }
 
-module.exports = hello;
+function goodbye() {
+  return "Goodbye World";
+}
+
+module.exports = {
+  hello: hello,
+  goodbye: goodbye
+};
